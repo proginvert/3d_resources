@@ -1,0 +1,11 @@
+Model Information:
+* title:	3D Gameboy style Dungeon room
+* source:	https://sketchfab.com/3d-models/3d-gameboy-style-dungeon-room-9ee7d82baac34da9af075cf096ea1306
+* author:	Mikito11 (https://sketchfab.com/Mikito11)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "3D Gameboy style Dungeon room" (https://sketchfab.com/3d-models/3d-gameboy-style-dungeon-room-9ee7d82baac34da9af075cf096ea1306) by Mikito11 (https://sketchfab.com/Mikito11) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
