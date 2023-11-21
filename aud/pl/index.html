@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cannon.js - bunny demo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
+    <body>
+<script src="cannon.js"></script>
+        <script src="cannon.demo.js"></script>
+        <script src="dat.gui.js"></script>
+        <script src="Three.js"></script>
+        <script src="TrackballControls.js"></script>
+        <script src="Detector.js"></script>
+        
+        <script src="smoothie.js"></script>
+
+        
+        <script>
+paral_1=[{verts:[.2,.2,0,1.2,.2,0,1.2,1.2,0,.2,1.2,0,0,0,1,1,0,1,1,1,1,0,1,1],faces:[3,6,2,3,7,6,0,7,3,0,4,7,7,4,5,7,5,6,3,1,0,3,2,1,0,5,4,5,0,1,1,2,6,1,6,5],offset:[-.6374034157303371,-.5318040449438204,-.12628506031460668]}];
+var pointtarx=2,pointtary=0,paral=[{verts:[0,0,0,1,0,0,1,1,0,0,1,0,0,0,1,1,0,1,1,1,1,0,1,1],faces:[3,6,2,3,7,6,0,7,3,0,4,7,7,4,5,7,5,6,3,1,0,3,2,1,0,5,4,5,0,1,1,2,6,1,6,5],offset:[-.6374034157303371,-.5318040449438204,-.12628506031460668]},{verts:[.2+pointtarx,.2+pointtary,0,1.2+pointtarx,.2+pointtary,0,1.2+pointtarx,1.2+pointtary,0,.2+pointtarx,1.2+pointtary,0,0+pointtarx,0+pointtary,1,1+pointtarx,0+pointtary,1,1+pointtarx,1+pointtary,1,0+pointtarx,1+pointtary,1],faces:[3,6,2,3,7,6,0,7,3,0,4,7,7,
+4,5,7,5,6,3,1,0,3,2,1,0,5,4,5,0,1,1,2,6,1,6,5],offset:[-.6374034157303371,-.5318040449438204,-.12628506031460668]},{verts:[.2+pointtarx,0+pointtary,2,1.2+pointtarx,0+pointtary,2,1.2+pointtarx,1+pointtary,2,.2+pointtarx,1+pointtary,2,0+pointtarx,0+pointtary,3,1+pointtarx,0+pointtary,3,1+pointtarx,1+pointtary,3,0+pointtarx,1+pointtary,3],faces:[3,6,2,3,7,6,0,7,3,0,4,7,7,4,5,7,5,6,3,1,0,3,2,1,0,5,4,5,0,1,1,2,6,1,6,5],offset:[-.6374034157303371,-.5318040449438204,-.12628506031460668]}],demo=new CANNON.Demo;
+console.log(123);
+demo.addScene("Bunny",function(){var d=demo.getWorld();d.gravity.set(0,0,0);d.solver.iterations=20;d.defaultContactMaterial.contactEquationStiffness=1E10;d.defaultContactMaterial.contactEquationRelaxation=10;for(var c=new CANNON.Body({mass:1}),a=0;a<paral.length;a++){for(var e=paral[a].verts,f=paral[a].faces,h=paral[a].offset,g=[],k=[],b=0;b<e.length;b+=3)g.push(new CANNON.Vec3(e[b],e[b+1],e[b+2]));for(b=0;b<f.length;b+=3)k.push([f[b],f[b+1],f[b+2]]);e=new CANNON.Vec3(h[0],h[1],h[2]);g=new CANNON.ConvexPolyhedron(g,
+k);c.addShape(g,e)}c.quaternion.setFromAxisAngle(new CANNON.Vec3(1,0,0),-Math.PI/2);a=new CANNON.Quaternion;a.setFromAxisAngle(new CANNON.Vec3(0,0,1),Math.PI);c.quaternion=a.mult(c.quaternion);d.addBody(c);demo.addVisual(c);c=new CANNON.Plane;a=new CANNON.Body({mass:0,position:new CANNON.Vec3(0,0,-5)});a.addShape(c);d.addBody(a);demo.addVisual(a)});demo.start();
+        </script>
+    </body>
+</html>
