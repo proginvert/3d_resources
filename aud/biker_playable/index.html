@@ -1,0 +1,15 @@
+<canvas id="ctx" width="500px" height="500px" style="position:absolute;top:0px;left:0px"></canvas>
+<script src="three.min.js"></script>
+<script src="OrbitControls.js"></script>
+<script src="GLTFLoader.js"></script>
+<script src="OBJLoader.js"></script>
+<script src="MTLLoader.js"></script>
+<script src="cannon.min.js"></script>
+<script>
+var ctx=document.getElementById("ctx"),WIDTH2=window.innerWidth,HEIGHT2=window.innerHeight;ctx.width=WIDTH2;ctx.height=HEIGHT2;var rende=new THREE.WebGLRenderer({canvas:ctx});rende.setClearColor(0);var scene=new THREE.Scene,camera=new THREE.PerspectiveCamera(45,WIDTH2/HEIGHT2,.1,5E3);camera.position.set(0,5,10);var color=16769968,intensity=1.5,light=new THREE.DirectionalLight(color,intensity);light.position.set(5,10,2);scene.add(light);scene.add(light.target);
+var geametryS=new THREE.SphereGeometry(1,1,1),materialS=new THREE.MeshBasicMaterial({color:65280,wireframe:!0}),meshS=new THREE.Mesh(geametryS,materialS);meshS.position.y+=2.2;meshS.position.z-=3;meshS.rotation.y=3.1;meshS.rotation.x=.4;scene.add(meshS);meshS.visible=!1;var glftload=new THREE.GLTFLoader;glftload.load("https://proginvert.github.io/3d_resources/aud/tera/tera4.gltf",function(a){a=a.scene;a.position.y-=22;scene.add(a)});var locker2=new THREE.Clock,biker=null;
+glftload.load("https://proginvert.github.io/3d_resources/aud/bike/scene.gltf",function(a){biker=a.scene;biker.mixer=new THREE.AnimationMixer(biker);biker.mixer.clipAction(a.animations[0]).play();biker.add(meshS);scene.add(biker)});var controls=new THREE.OrbitControls(camera,ctx);controls.update();var world=new CANNON.World;world.gravity.set(0,-9.8,0);var planeBody=new CANNON.Body({mass:0,position:new CANNON.Vec3(0,-5,0)}),planeShape=new CANNON.Box(new CANNON.Vec3(.3,.5,.2));planeBody.addShape(planeShape);
+var sphereBody=new CANNON.Body({mass:2,position:new CANNON.Vec3(0,2,0)}),sphereShape=new CANNON.Box(new CANNON.Vec3(.3,.5,.2));sphereBody.addShape(sphereShape);world.addBody(sphereBody);
+setInterval(function(){null!==biker&&(biker.mixer.update(locker2.getDelta()),biker.position.z=sphereBody.position.z,biker.position.y=sphereBody.position.y,biker.position.x=sphereBody.position.x,biker.quaternion.z=sphereBody.quaternion.z,biker.quaternion.y=sphereBody.quaternion.y,biker.quaternion.x=sphereBody.quaternion.x,biker.quaternion.w=sphereBody.quaternion.w,camera.position.copy(meshS.getWorldPosition()),camera.rotation.set(meshS.rotation.x,meshS.rotation.y,meshS.rotation.z),world.step(1/60),
+rende.render(scene,camera))},40);
+</script>
