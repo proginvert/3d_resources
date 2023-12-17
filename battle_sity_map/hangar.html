@@ -38,6 +38,7 @@ var start1=0
 var sound=null
 document.onmousedown=function(event){
 if(start1===0){
+	anim2.visible = false;
 const listener = new THREE.AudioListener();
 camera.add( listener );
 sound = new THREE.PositionalAudio( listener );
