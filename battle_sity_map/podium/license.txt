@@ -1,0 +1,8 @@
+Model Information:
+* title:	Terrace, Терраса
+* source:	https://sketchfab.com/3d-models/terrace-3ddd086301a04f26b98ebbd2dd013d0c
+* author:	VladEv1L (https://sketchfab.com/VladEv1L)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
