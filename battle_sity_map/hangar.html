@@ -36,9 +36,8 @@ scene.add( light3 );
 
 var start1=0
 var sound=null
-document.onmousedown=function(event){
+var gomusick=function(){
 if(start1===0){
-	anim2.visible = false;
 const listener = new THREE.AudioListener();
 camera.add( listener );
 sound = new THREE.PositionalAudio( listener );
@@ -56,7 +55,29 @@ audioLoader.load( 'https://proginvert.github.io/3d_resources/battle_sity_map/hat
 	start1=1
 });
 console.log(111)
+anim2.visible = false;
 }
+}
+function handleStart(e) {
+		if(e.touches) {
+gomusick()
+
+
+
+		}else{
+		
+		}
+		}
+function startup() {
+  var el = ctx//[0]
+  el.addEventListener("touchstart", handleStart, false);
+  //el.addEventListener("touchend", handleEnd, false);
+ // el.addEventListener("touchcancel", handleCancel, false);
+  //el.addEventListener("touchmove", handleMove, false);
+}
+document.addEventListener("DOMContentLoaded", startup);
+document.onmousedown=function(event){
+gomusick()
 }
 var glftload = new THREE.GLTFLoader()
 glftload.load('https://proginvert.github.io/3d_resources/battle_sity_map/snowy_landscape/scene.gltf',(gltfScene)=>{
