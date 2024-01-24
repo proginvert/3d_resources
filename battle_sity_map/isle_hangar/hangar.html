@@ -1,0 +1,51 @@
+
+
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <style>
+            body {
+                color: #61443e;
+                font-family:Monospace;
+                font-size:13px;
+                text-align:center;
+				cursor: url(cursor.cur)/*tpa=/textures/cursor.cur.html*/
+				, default;
+                background-color: #bfd1e5;
+                margin: 0px;
+                overflow: hidden;
+            }
+			#speedometer {
+				color: #ffffff;
+				background-color: #990000;
+				position: absolute;
+				bottom: 0px;
+				padding: 5px;
+			}
+            #info {
+                position: absolute;
+                top: 0px; width: 100%;
+                padding: 5px;
+            }
+
+            a {
+
+                color: #a06851;
+            }
+
+        </style>
+<canvas id="ctx"></canvas>
+<progress id="progressbar"  style="position:absolute;top:50%;left:35%;width:30%;height:2%;" value="0" max="100"></progress>
+<div id="container"></div>
+<!--<script src="../build/three.min.js"></script>
+<script src="js/controls/OrbitControls.js"></script>
+<script src="js/libs/GLTFLoader.js"></script>
+<script src="js/libs/ammo.js"></script>
+<script src="js/base64.js"></script>-->
+<script src="https://proginvert.github.io/moba/three.min.js"></script>
+<script src="https://proginvert.github.io/moba/OrbitControls.js"></script>
+<script src="https://proginvert.github.io/moba/GLTFLoader.js"></script>
+<script>
+var _0x1b34d6=_0x586e;(function(_0x2b049f,_0x5707a4){var _0x2b3582=_0x586e,_0x2358ba=_0x2b049f();while(!![]){try{var _0x2e3640=parseInt(_0x2b3582(0x1c8))/0x1+-parseInt(_0x2b3582(0x189))/0x2*(-parseInt(_0x2b3582(0x18e))/0x3)+parseInt(_0x2b3582(0x1b8))/0x4+parseInt(_0x2b3582(0x17f))/0x5*(parseInt(_0x2b3582(0x1a3))/0x6)+-parseInt(_0x2b3582(0x1a7))/0x7*(-parseInt(_0x2b3582(0x1a0))/0x8)+parseInt(_0x2b3582(0x1bb))/0x9*(-parseInt(_0x2b3582(0x19b))/0xa)+-parseInt(_0x2b3582(0x19d))/0xb;if(_0x2e3640===_0x5707a4)break;else _0x2358ba['push'](_0x2358ba['shift']());}catch(_0x105440){_0x2358ba['push'](_0x2358ba['shift']());}}}(_0x5412,0x19de3));;(function(_0x165c65){var _0x4fb917=_0x586e,_0x784462=-0x1,_0x1f0146={'onVisible':function(_0x3dfb1f){var _0x235733=_0x586e,_0x25d6fb=_0x1f0146[_0x235733(0x1bf)]();if(!_0x25d6fb||!_0x1f0146[_0x235733(0x18b)]())return _0x3dfb1f(),_0x25d6fb;var _0x4e3811=_0x1f0146['change'](function(_0x391a0b,_0xbd2d75){var _0x2edb48=_0x235733;!_0x1f0146['hidden']()&&(_0x1f0146[_0x2edb48(0x1a8)](_0x4e3811),_0x3dfb1f());});return _0x4e3811;},'change':function(_0x126687){var _0x49839d=_0x586e;if(!_0x1f0146[_0x49839d(0x1bf)]())return![];_0x784462+=0x1;var _0x69b2e9=_0x784462;return _0x1f0146[_0x49839d(0x1bc)][_0x69b2e9]=_0x126687,_0x1f0146[_0x49839d(0x197)](),_0x69b2e9;},'unbind':function(_0x2fbf60){delete _0x1f0146['_callbacks'][_0x2fbf60];},'afterPrerendering':function(_0x137572){var _0xce8cb7=_0x586e,_0x2d7114=_0x1f0146[_0xce8cb7(0x1bf)](),_0x4885da='prerender';if(!_0x2d7114||_0x4885da!=_0x1f0146[_0xce8cb7(0x18c)]())return _0x137572(),_0x2d7114;var _0x191d9e=_0x1f0146[_0xce8cb7(0x1c0)](function(_0x52f5d1,_0x51155e){var _0x45897a=_0xce8cb7;_0x4885da!=_0x51155e&&(_0x1f0146[_0x45897a(0x1a8)](_0x191d9e),_0x137572());});return _0x191d9e;},'hidden':function(){var _0x405190=_0x586e;return!!(_0x1f0146[_0x405190(0x18d)][_0x405190(0x18b)]||_0x1f0146[_0x405190(0x18d)][_0x405190(0x1aa)]);},'state':function(){var _0x5beaa6=_0x586e;return _0x1f0146[_0x5beaa6(0x18d)]['visibilityState']||_0x1f0146[_0x5beaa6(0x18d)][_0x5beaa6(0x1bd)]||_0x5beaa6(0x1a4);},'isSupported':function(){var _0x1ad6c0=_0x586e;return _0x1f0146[_0x1ad6c0(0x18d)][_0x1ad6c0(0x18b)]!==undefined||_0x1f0146[_0x1ad6c0(0x18d)][_0x1ad6c0(0x1aa)]!==undefined;},'_doc':document||{},'_callbacks':{},'_change':function(_0x1bc899){var _0x4caf6c=_0x586e,_0x209ca2=_0x1f0146[_0x4caf6c(0x18c)]();for(var _0x539f36 in _0x1f0146[_0x4caf6c(0x1bc)]){_0x1f0146[_0x4caf6c(0x1bc)][_0x539f36][_0x4caf6c(0x185)](_0x1f0146[_0x4caf6c(0x18d)],_0x1bc899,_0x209ca2);}},'_listen':function(){var _0x100649=_0x586e;if(_0x1f0146[_0x100649(0x1b1)])return;var _0x1f2d50='visibilitychange';_0x1f0146[_0x100649(0x18d)][_0x100649(0x1bd)]&&(_0x1f2d50=_0x100649(0x1cc)+_0x1f2d50);var _0x585aae=function(){var _0x1b1a01=_0x100649;_0x1f0146[_0x1b1a01(0x191)][_0x1b1a01(0x1b3)](_0x1f0146,arguments);};_0x1f0146[_0x100649(0x18d)][_0x100649(0x180)]?_0x1f0146[_0x100649(0x18d)][_0x100649(0x180)](_0x1f2d50,_0x585aae):_0x1f0146[_0x100649(0x18d)][_0x100649(0x1b9)](_0x1f2d50,_0x585aae),_0x1f0146[_0x100649(0x1b1)]=!![];}};typeof module!=_0x4fb917(0x1be)&&module[_0x4fb917(0x193)]?module[_0x4fb917(0x193)]=_0x1f0146:_0x165c65['Visibility']=_0x1f0146;}(this),ctx['width']=window['innerWidth'],ctx[_0x1b34d6(0x1c2)]=window['innerHeight']);var renderer=new THREE[(_0x1b34d6(0x192))]({'canvas':ctx,'antialias':!![]}),camera=new THREE[(_0x1b34d6(0x187))](0x2d,window[_0x1b34d6(0x1b6)]/window[_0x1b34d6(0x1b0)],0.1,0x1388);camera[_0x1b34d6(0x1ca)][_0x1b34d6(0x184)](-0x3,0x2,-0x5);var hangar=new THREE[(_0x1b34d6(0x198))]();const light=new THREE['DirectionalLight'](0xffffff,0x1);light[_0x1b34d6(0x1ca)][_0x1b34d6(0x184)](0x5,0xa,0x2),hangar[_0x1b34d6(0x1ba)](light);var ambientl=new THREE[(_0x1b34d6(0x1a1))](0xffffff,0.2);hangar[_0x1b34d6(0x1ba)](ambientl);var loading_resources=[],loading_resources_max=0x3,lodingmanager=new THREE[(_0x1b34d6(0x1c3))]();lodingmanager[_0x1b34d6(0x196)]=function(_0x3dbaf6,_0x2765d6,_0x572038){var _0x274b99=_0x1b34d6;progressbar[_0x274b99(0x1a6)]=_0x2765d6/_0x572038*0x63;},lodingmanager[_0x1b34d6(0x1ac)]=function(_0x37c39e,_0xd5441f,_0x5bd463){var _0x1060c6=_0x1b34d6;progressbar[_0x1060c6(0x1b7)][_0x1060c6(0x1b5)]=_0x1060c6(0x1c1);};var glftload=new THREE['GLTFLoader'](lodingmanager);isle=null;var islel=new THREE[(_0x1b34d6(0x1b2))]();glftload[_0x1b34d6(0x1ad)]('https://proginvert.github.io/3d_resources/battle_sity_map/isle_hangar/tropical_island.glb',_0x37e87d=>{var _0xf2ea8=_0x1b34d6;isle=_0x37e87d[_0xf2ea8(0x1a2)],isle[_0xf2ea8(0x1c6)]=new THREE['AnimationMixer'](isle),isle['mixer'][_0xf2ea8(0x1c7)](_0x37e87d[_0xf2ea8(0x182)][0x0])[_0xf2ea8(0x18f)](),hangar[_0xf2ea8(0x1ba)](_0x37e87d[_0xf2ea8(0x1a2)]),loading_resources[_0xf2ea8(0x1c9)](!![]);}),glftload['load']('https://proginvert.github.io/3d_resources/battle_sity_map/isle_hangar/t110e5.glb',_0x3734d3=>{var _0x3dcc85=_0x1b34d6;hangar[_0x3dcc85(0x1ba)](_0x3734d3['scene']),loading_resources[_0x3dcc85(0x1c9)](!![]);});const listener=new THREE[(_0x1b34d6(0x1af))]();camera[_0x1b34d6(0x1ba)](listener);function _0x5412(){var _0x41c8d4=['maxDistance','hidden','state','_doc','6wwuAgc','play','minDistance','_change','WebGLRenderer','exports','aspect','OrbitControls','onProgress','_listen','Scene','render','setBuffer','773380wJqdVU','maxPolarAngle','3065007rpAdWi','https://proginvert.github.io/3d_resources/battle_sity_map/isle_hangar/sea.mp3','getDelta','494008ydveSz','AmbientLight','scene','8706CiiZXN','visible','onmousedown','value','21RDGGEj','unbind','Audio','webkitHidden','touches','onLoad','load','enablePan','AudioListener','innerHeight','_init','Clock','apply','autoRotate','display','innerWidth','style','262068zCGJgi','attachEvent','add','18MaezAD','_callbacks','webkitVisibilityState','undefined','isSupported','change','none','height','LoadingManager','autoRotateSpeed','DOMContentLoaded','mixer','clipAction','68255DdDnFD','push','position','setVolume','webkit','update','565yINEpG','addEventListener','setLoop','animations','updateProjectionMatrix','set','call','resize','PerspectiveCamera','minPolarAngle','56280FiZVsX'];_0x5412=function(){return _0x41c8d4;};return _0x5412();}var audioLoader=new THREE['AudioLoader'](lodingmanager),sea=new THREE[(_0x1b34d6(0x1a9))](listener);audioLoader[_0x1b34d6(0x1ad)](_0x1b34d6(0x19e),function(_0x28ab7a){var _0x5400ec=_0x1b34d6;sea[_0x5400ec(0x19a)](_0x28ab7a),sea[_0x5400ec(0x181)](!![]),sea[_0x5400ec(0x1cb)](0.15),loading_resources['push'](!![]);});var controls=new THREE[(_0x1b34d6(0x195))](camera,ctx);controls[_0x1b34d6(0x18a)]=0xa,controls[_0x1b34d6(0x190)]=0x3,controls[_0x1b34d6(0x1ae)]=![],controls['enableDamping']=!![],controls[_0x1b34d6(0x1b4)]=!![],controls[_0x1b34d6(0x1c4)]=0.2,controls[_0x1b34d6(0x188)]=0.1,controls[_0x1b34d6(0x19c)]=1.7-0.02,controls['target']['y']=0.5,controls[_0x1b34d6(0x17e)](),document[_0x1b34d6(0x1a5)]=function(_0x951500){var _0x5924b1=_0x1b34d6;sea[_0x5924b1(0x18f)]();};function handleStart(_0x41116a){var _0x355176=_0x1b34d6;if(_0x41116a[_0x355176(0x1ab)])audioLoader[_0x355176(0x1ad)](_0x355176(0x19e),function(_0x43669f){var _0x557afa=_0x355176;sea[_0x557afa(0x19a)](_0x43669f),sea[_0x557afa(0x181)](!![]),sea['setVolume'](0.15),sea['play'](),loading_resources[_0x557afa(0x1c9)](!![]);});else{}}function startup(){var _0x24bacb=ctx;_0x24bacb['addEventListener']('touchstart',handleStart,![]);}document[_0x1b34d6(0x180)](_0x1b34d6(0x1c5),startup),window[_0x1b34d6(0x180)](_0x1b34d6(0x186),onWindowResize,![]);function onWindowResize(){var _0x2b1487=_0x1b34d6;camera[_0x2b1487(0x194)]=window[_0x2b1487(0x1b6)]/window[_0x2b1487(0x1b0)],camera[_0x2b1487(0x183)](),renderer['setSize'](window[_0x2b1487(0x1b6)],window[_0x2b1487(0x1b0)]);}function _0x586e(_0x50ac4c,_0x5a1ca0){var _0x5412a6=_0x5412();return _0x586e=function(_0x586eb5,_0x4ab900){_0x586eb5=_0x586eb5-0x17e;var _0x1b8ee5=_0x5412a6[_0x586eb5];return _0x1b8ee5;},_0x586e(_0x50ac4c,_0x5a1ca0);}var gameready=![];setInterval(function(){var _0x21d03b=_0x1b34d6;if(gameready===![]){var _0x4abbbe=!![];for(var _0x5c0a35=0x0;_0x5c0a35<loading_resources_max;_0x5c0a35++){if(loading_resources[_0x5c0a35]!==!![]){_0x4abbbe=![];break;}}_0x4abbbe===!![]&&(gameready=!![]);}else _0x21d03b(0x1a4)==Visibility[_0x21d03b(0x18c)]()?sea[_0x21d03b(0x1cb)](0.15):sea[_0x21d03b(0x1cb)](0x0),controls[_0x21d03b(0x17e)](),isle[_0x21d03b(0x1c6)][_0x21d03b(0x17e)](islel[_0x21d03b(0x19f)]()),renderer[_0x21d03b(0x199)](hangar,camera);},0x3e8/0x32);
+</script>
