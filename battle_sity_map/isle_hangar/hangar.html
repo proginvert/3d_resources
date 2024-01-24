@@ -1,0 +1,50 @@
+<canvas id="ctx"></canvas>
+
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <style>
+            body {
+                color: #61443e;
+                font-family:Monospace;
+                font-size:13px;
+                text-align:center;
+				cursor: url(cursor.cur)/*tpa=/textures/cursor.cur.html*/
+				, default;
+                background-color: #bfd1e5;
+                margin: 0px;
+                overflow: hidden;
+            }
+			#speedometer {
+				color: #ffffff;
+				background-color: #990000;
+				position: absolute;
+				bottom: 0px;
+				padding: 5px;
+			}
+            #info {
+                position: absolute;
+                top: 0px; width: 100%;
+                padding: 5px;
+            }
+
+            a {
+
+                color: #a06851;
+            }
+
+        </style>
+
+		<div id="container"></div>
+<!--<script src="../build/three.min.js"></script>
+<script src="js/controls/OrbitControls.js"></script>
+<script src="js/libs/GLTFLoader.js"></script>
+<script src="js/libs/ammo.js"></script>
+<script src="js/base64.js"></script>-->
+<script src="https://proginvert.github.io/moba/three.min.js"></script>
+<script src="https://proginvert.github.io/moba/OrbitControls.js"></script>
+<script src="https://proginvert.github.io/moba/GLTFLoader.js"></script>
+<script>
+var _0x5e8e15=_0x32da;(function(_0x1dcc15,_0x18915b){var _0x3e657d=_0x32da,_0x2a6042=_0x1dcc15();while(!![]){try{var _0x1ffc02=-parseInt(_0x3e657d(0x11a))/0x1*(-parseInt(_0x3e657d(0x108))/0x2)+parseInt(_0x3e657d(0xfd))/0x3+-parseInt(_0x3e657d(0xf3))/0x4+-parseInt(_0x3e657d(0x116))/0x5*(parseInt(_0x3e657d(0xed))/0x6)+-parseInt(_0x3e657d(0xee))/0x7*(-parseInt(_0x3e657d(0x118))/0x8)+-parseInt(_0x3e657d(0xec))/0x9+parseInt(_0x3e657d(0x11c))/0xa;if(_0x1ffc02===_0x18915b)break;else _0x2a6042['push'](_0x2a6042['shift']());}catch(_0xefe16e){_0x2a6042['push'](_0x2a6042['shift']());}}}(_0x34bb,0xee2e7),ctx[_0x5e8e15(0xfc)]=window['innerWidth'],ctx[_0x5e8e15(0x10a)]=window[_0x5e8e15(0x104)]);var renderer=new THREE['WebGLRenderer']({'canvas':ctx,'antialias':!![]}),camera=new THREE[(_0x5e8e15(0x101))](0x2d,window['innerWidth']/window['innerHeight'],0.1,0x1388);camera[_0x5e8e15(0xf9)][_0x5e8e15(0x10e)](-0x3,0x2,-0x5);var hangar=new THREE[(_0x5e8e15(0xf2))]();const light=new THREE['DirectionalLight'](0xffffff,0x1);light[_0x5e8e15(0xf9)][_0x5e8e15(0x10e)](0x5,0xa,0x2),hangar[_0x5e8e15(0x110)](light);var ambientl=new THREE[(_0x5e8e15(0xef))](0xffffff,0.2);hangar[_0x5e8e15(0x110)](ambientl);function _0x34bb(){var _0x5d6076=['innerHeight','play','getDelta','https://proginvert.github.io/3d_resources/battle_sity_map/isle_hangar/tropical_island/scene.gltf','94vAyvcz','onmousedown','height','AudioLoader','AudioListener','Audio','set','setLoop','add','push','autoRotateSpeed','innerWidth','animations','setBuffer','928925TEglVa','clipAction','104IPwykA','update','29429DyGqbW','load','988180onUpFc','15766722MvSaUW','12kOhLSd','825335PPdayZ','AmbientLight','scene','enableDamping','Scene','6309384eghJes','enablePan','resize','render','AnimationMixer','maxPolarAngle','position','setSize','https://proginvert.github.io/3d_resources/battle_sity_map/isle_hangar/sea.mp3','width','4984857ThUgSW','mixer','Clock','GLTFLoader','PerspectiveCamera','maxDistance','updateProjectionMatrix'];_0x34bb=function(){return _0x5d6076;};return _0x34bb();}var glftload=new THREE[(_0x5e8e15(0x100))]();isle=null;var islel=new THREE[(_0x5e8e15(0xff))]();glftload[_0x5e8e15(0x11b)](_0x5e8e15(0x107),_0x443cf3=>{var _0x2b52e7=_0x5e8e15;isle=_0x443cf3['scene'],isle[_0x2b52e7(0xfe)]=new THREE[(_0x2b52e7(0xf7))](isle),isle[_0x2b52e7(0xfe)][_0x2b52e7(0x117)](_0x443cf3[_0x2b52e7(0x114)][0x0])[_0x2b52e7(0x105)](),hangar[_0x2b52e7(0x110)](_0x443cf3[_0x2b52e7(0xf0)]);}),glftload['load']('https://proginvert.github.io/3d_resources/battle_sity_map/isle_hangar/t110e5.glb',_0x18e2cc=>{var _0x5e0e26=_0x5e8e15;hangar[_0x5e0e26(0x110)](_0x18e2cc[_0x5e0e26(0xf0)]);});const listener=new THREE[(_0x5e8e15(0x10c))]();camera[_0x5e8e15(0x110)](listener);var audioLoader=new THREE[(_0x5e8e15(0x10b))](),sea=new THREE[(_0x5e8e15(0x10d))](listener);audioLoader[_0x5e8e15(0x11b)](_0x5e8e15(0xfb),function(_0x560bff){var _0x32aed1=_0x5e8e15;sea[_0x32aed1(0x115)](_0x560bff),sea[_0x32aed1(0x10f)](!![]),sea['setVolume'](0.15),loading_resources[_0x32aed1(0x111)](!![]);});function _0x32da(_0x5d1cca,_0x14c5ae){var _0x34bbb5=_0x34bb();return _0x32da=function(_0x32da92,_0x208972){_0x32da92=_0x32da92-0xec;var _0x19f986=_0x34bbb5[_0x32da92];return _0x19f986;},_0x32da(_0x5d1cca,_0x14c5ae);}var controls=new THREE['OrbitControls'](camera,ctx);controls[_0x5e8e15(0x102)]=0xa,controls['minDistance']=0x3,controls[_0x5e8e15(0xf4)]=![],controls[_0x5e8e15(0xf1)]=!![],controls['autoRotate']=!![],controls[_0x5e8e15(0x112)]=0.2,controls['minPolarAngle']=0.1,controls[_0x5e8e15(0xf8)]=1.7-0.02,controls['target']['y']=0.5,controls[_0x5e8e15(0x119)](),document[_0x5e8e15(0x109)]=function(_0x226187){var _0x2c79b0=_0x5e8e15;sea[_0x2c79b0(0x105)]();},window['addEventListener'](_0x5e8e15(0xf5),onWindowResize,![]);function onWindowResize(){var _0x1cf852=_0x5e8e15;camera['aspect']=window[_0x1cf852(0x113)]/window[_0x1cf852(0x104)],camera[_0x1cf852(0x103)](),renderer[_0x1cf852(0xfa)](window['innerWidth'],window[_0x1cf852(0x104)]);}setInterval(function(){var _0x1f5da6=_0x5e8e15;controls[_0x1f5da6(0x119)](),isle[_0x1f5da6(0xfe)][_0x1f5da6(0x119)](islel[_0x1f5da6(0x106)]()),renderer[_0x1f5da6(0xf6)](hangar,camera);},0x3e8/0x32);
+</script>
