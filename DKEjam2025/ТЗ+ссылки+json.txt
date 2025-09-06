@@ -1,0 +1,365 @@
+1 Персонаж (fighter1)
+Имя персонажа: Всеслав
+Звуки шагов: Dryland(https://proginvert.github.io/3d_resources/DKEjam2025/step1.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/step2.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/step3.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/step4.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/step5.mp3), Grass(https://proginvert.github.io/3d_resources/DKEjam2025/step_1.mp3)
+Способности персонажа: С кулака, Славянский удар булавой
+
+2 Персонаж (fighter2)
+Имя персонажа: Ящер-ученик
+Способности персонажа: Удар хвостом
+
+3 Персонаж (fighter3)
+Имя персонажа: Ящер-мастер
+Способности персонажа: Удар хвостом, Удар мечом
+
+4 Персонаж (fighter4)
+Имя персонажа: Лириэль
+Звуки шагов: Dryland(https://proginvert.github.io/3d_resources/DKEjam2025/step1.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/step2.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/step3.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/step4.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/step5.mp3), Grass(https://proginvert.github.io/3d_resources/DKEjam2025/step_1.mp3)
+Способности персонажа: Рассекающий удар, Звон стали, За императора!
+
+5 Персонаж (fighter5)
+Имя персонажа: Шиноби
+Способности персонажа: Удар мечом, Рассекающий удар
+
+1 Квест
+Название квеста: Пропавший артефакт
+Описание квеста: Иамакава попросил вас найти и опросить эльфа Лириэля, двигайтесь в право, до его привала.
+Условия выполнения квеста:
+При каких условиях квест будет приниматься: Завершение диалога log1
+При каких условиях квест будет выполняться: Завершение диалога log9
+Награда за квест (по желанию): 50xp
+
+2 Квест
+Название квеста: Подготовится к битве
+Описание квеста: Лириэль попросил вас подготовится к битве с Шиноби. Кажется в деревне Иамакавы есть торговец, продающий хорошую экипировку.
+Условия выполнения квеста:
+При каких условиях квест будет приниматься: Завершение диалога log9
+При каких условиях квест будет выполняться: Выполнение условий юсейджа trigger_area1
+Награда за квест (по желанию): 
+
+
+1 Предмет
+Имя предмета: Старый нагрудник
+Иконка предмета: https://proginvert.github.io/3d_resources/DKEjam2025/item_old_armor.jpg
+Цвет имени: Белый
+Описание предмета: Видавший виды нагрудник Всеслава, заставший ещё вторую войну ящеров.
+Цвет описания: Белый
+Использование предмета: 11 брони.
+Триггер при подборе предмета из лута:
+КД предмета:
+Размер стака предмета: 1
+Звук подбирания: https://proginvert.github.io/3d_resources/DKEjam2025/item_up.mp3
+Звук дропа: https://proginvert.github.io/3d_resources/DKEjam2025/item_drop.mp3
+Звук использования: 
+
+2 Предмет
+Имя предмета: Старые кольчужные поножи
+Иконка предмета: https://proginvert.github.io/3d_resources/DKEjam2025/item_old_leg.jpg
+Цвет имени: Белый
+Описание предмета: Любимые поножи Всеслава для зажима.
+Цвет описания: Белый
+Использование предмета: 7 брони.
+Триггер при подборе предмета из лута:
+КД предмета:
+Размер стака предмета: 1
+Звук подбирания: https://proginvert.github.io/3d_resources/DKEjam2025/item_up.mp3
+Звук дропа: https://proginvert.github.io/3d_resources/DKEjam2025/item_drop.mp3
+Звук использования: 
+
+3 Предмет
+Имя предмета: Старые сапоги
+Иконка предмета: https://proginvert.github.io/3d_resources/DKEjam2025/item_old_shooes.jpg
+Цвет имени: Белый
+Описание предмета: Старые грязимесы, кажется с дыркой в подошве.
+Цвет описания: Белый
+Использование предмета: 4 брони.
+Триггер при подборе предмета из лута:
+КД предмета:
+Размер стака предмета: 1
+Звук подбирания: https://proginvert.github.io/3d_resources/DKEjam2025/item_up.mp3
+Звук дропа: https://proginvert.github.io/3d_resources/DKEjam2025/item_drop.mp3
+Звук использования: 
+
+4 Предмет
+Имя предмета: Треснувший баклер
+Иконка предмета: https://proginvert.github.io/3d_resources/DKEjam2025/item_old_shield.jpg
+Цвет имени: Белый
+Описание предмета: Кулачный щит, для пьяных драк за амбаром.
+Цвет описания: Белый
+Использование предмета: 22 брони.
+Триггер при подборе предмета из лута:
+КД предмета:
+Размер стака предмета: 1
+Звук подбирания: https://proginvert.github.io/3d_resources/DKEjam2025/item_up.mp3
+Звук дропа: https://proginvert.github.io/3d_resources/DKEjam2025/item_drop.mp3
+Звук использования: 
+
+5 Предмет
+Имя предмета: Деревянная булава.
+Иконка предмета: https://proginvert.github.io/3d_resources/DKEjam2025/item_old_hammer.jpg
+Цвет имени: Белый
+Описание предмета: Затёртая, пропитанная воском и смолой палица.
+Цвет описания: Белый
+Использование предмета: 5-10 урона.
+Триггер при подборе предмета из лута:
+КД предмета:
+Размер стака предмета: 1
+Звук подбирания: https://proginvert.github.io/3d_resources/DKEjam2025/item_up.mp3
+Звук дропа: https://proginvert.github.io/3d_resources/DKEjam2025/item_drop.mp3
+Звук использования: 
+
+6 Предмет
+Имя предмета: Рюкзак Всеслава.
+Иконка предмета: https://proginvert.github.io/3d_resources/DKEjam2025/item_bag.jpg
+Цвет имени: Белый
+Описание предмета: Старый добрый вместительный рюкзак Всеслава, без которого он ни нагой.
+Цвет описания: Белый
+Использование предмета: 20 слотов.
+Триггер при подборе предмета из лута:
+КД предмета:
+Размер стака предмета: 1
+Звук подбирания: https://proginvert.github.io/3d_resources/DKEjam2025/item_up.mp3
+Звук дропа: https://proginvert.github.io/3d_resources/DKEjam2025/item_drop.mp3
+Звук использования: 
+
+7 Предмет
+Имя предмета: Короткий меч.
+Иконка предмета: https://proginvert.github.io/3d_resources/DKEjam2025/item_shop_sword.jpg
+Цвет имени: Белый
+Описание предмета: Как заверяет продавец: Топ за свои деньги.
+Цвет описания: Белый
+Использование предмета: 8-10 урона, +2 к силе.
+Триггер при подборе предмета из лута:
+КД предмета:
+Размер стака предмета: 1
+Звук подбирания: https://proginvert.github.io/3d_resources/DKEjam2025/item_up.mp3
+Звук дропа: https://proginvert.github.io/3d_resources/DKEjam2025/item_drop.mp3
+Звук использования: 
+
+8 Предмет
+Имя предмета: Узорчатый щит.
+Иконка предмета: https://proginvert.github.io/3d_resources/DKEjam2025/item_shop_shield.jpg
+Цвет имени: Белый
+Описание предмета: Друидская печать, на лицевой стороне, помогает почувствовать силу земли, ну по крайней мере, так утверждает продавец.
+Цвет описания: Белый
+Использование предмета: 30 брони, +3 к выносливости.
+Триггер при подборе предмета из лута:
+КД предмета:
+Размер стака предмета: 1
+Звук подбирания: https://proginvert.github.io/3d_resources/DKEjam2025/item_up.mp3
+Звук дропа: https://proginvert.github.io/3d_resources/DKEjam2025/item_drop.mp3
+Звук использования: 
+
+9 Предмет
+Имя предмета: Тяжёлые кольчужные штаны.
+Иконка предмета: https://proginvert.github.io/3d_resources/DKEjam2025/item_shop_leg.jpg
+Цвет имени: Белый
+Описание предмета: По словам продавца: 100% ХБ.
+Цвет описания: Белый
+Использование предмета: 30 брони.
+Триггер при подборе предмета из лута:
+КД предмета:
+Размер стака предмета: 1
+Звук подбирания: https://proginvert.github.io/3d_resources/DKEjam2025/item_up.mp3
+Звук дропа: https://proginvert.github.io/3d_resources/DKEjam2025/item_drop.mp3
+Звук использования: 
+
+10 Предмет
+Имя предмета: Старый рыцарский шлем.
+Иконка предмета: https://proginvert.github.io/3d_resources/DKEjam2025/item_shop_helm.jpg
+Цвет имени: Белый
+Описание предмета: Продавец говорит, что: Не бита, не крадена, а дырки на затылке для вентиляции.
+Цвет описания: Белый
+Использование предмета: 15 брони.
+Триггер при подборе предмета из лута:
+КД предмета:
+Размер стака предмета: 1
+Звук подбирания: https://proginvert.github.io/3d_resources/DKEjam2025/item_up.mp3
+Звук дропа: https://proginvert.github.io/3d_resources/DKEjam2025/item_drop.mp3
+Звук использования: 
+
+11 Предмет
+Имя предмета: Свиток изучения: Бросок булавы
+Иконка предмета: https://proginvert.github.io/3d_resources/DKEjam2025/item_shop_inb.jpg
+Цвет имени: Белый
+Описание предмета: Обучает броску оружия.
+Цвет описания: Зелёный
+Использование предмета: Обучает Всеслава способности "Бросок булавы"
+Триггер при подборе предмета из лута:
+КД предмета:
+Размер стака предмета: 1
+Звук подбирания: https://proginvert.github.io/3d_resources/DKEjam2025/item_up.mp3
+Звук дропа: https://proginvert.github.io/3d_resources/DKEjam2025/item_drop.mp3
+Звук использования: 
+
+12 Предмет
+Имя предмета: Горсть монет
+Иконка предмета: https://proginvert.github.io/3d_resources/DKEjam2025/item_money.jpg
+Цвет имени: Белый
+Описание предмета: Содержит от 3 до 10 монет.
+Цвет описания: Зелёный
+Использование предмета: Добавляет Всеславу от 3 до 10 монет.
+Триггер при подборе предмета из лута:
+КД предмета:
+Размер стака предмета: 20
+Звук подбирания: https://proginvert.github.io/3d_resources/DKEjam2025/item_up.mp3
+Звук дропа: https://proginvert.github.io/3d_resources/DKEjam2025/item_drop.mp3
+Звук использования: 
+
+1 Группа мобов
+Список локаций, где может заспавниться группа мобов: loc2
+Вероятность спавна всей группы мобов в процентах: 100%
+Группа мобов:
+1 - Ящер-ученик
+Разброс уровней моба: 1-1
+Шанс спавна этого моба в группе в процентах: 100%
+Лут:
+[Имя предмета: Горсть монет, Минимум: 1, Максимум: 1, Шанс выпадения в процентах: 80%]
+2 - Ящер-мастер
+Разброс уровней моба: 2-2
+Шанс спавна этого моба в группе в процентах: 50%
+Лут:
+[Имя предмета: Горсть монет, Минимум: 1, Максимум: 1, Шанс выпадения в процентах: 100%]
+
+1 Способность
+Имя способности: С кулака
+Иконка способности: https://proginvert.github.io/3d_resources/DKEjam2025/ability_punch.jpg
+Звук способности: https://proginvert.github.io/3d_resources/DKEjam2025/ability_punch1.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/ability_punch2.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/ability_punch3.mp3
+Время восстановления: 0
+Стоимость ресурса: 0
+Что происходит при активации способности: выбранный противник получает 4-6 урона, независящего от оружия.
+Описание способности: Славянский удар по макушке.
+
+2 Способность
+Имя способности: Славянский удар булавой
+Иконка способности: https://proginvert.github.io/3d_resources/DKEjam2025/ability_impact.jpg
+Звук способности: https://proginvert.github.io/3d_resources/DKEjam2025/ability_impact1.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/ability_impact2.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/ability_impact3.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/ability_impact4.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/ability_impact5.mp3
+Время восстановления: 0
+Стоимость ресурса: 0
+Что происходит при активации способности: выбранный противник получает 100% урона оружия. Если способность "Бросок булавы" находится в КД, то эта способность тоже на КД.
+Описание способности: Мощный удар вашим оружием.
+
+3 Способность
+Имя способности: Бросок булавы
+Иконка способности: https://proginvert.github.io/3d_resources/DKEjam2025/ability_throw.jpg
+Звук способности: https://proginvert.github.io/3d_resources/DKEjam2025/ability_throw.mp3
+Время восстановления: 5
+Стоимость ресурса: 0
+Что происходит при активации способности: выбранный противник получает 400% урона оружия. Вместе с этой способностью уходит на кд и "Славянский удар булавой"
+Описание способности: Добивающий бросок вашего оружия.
+
+4 Способность
+Имя способности: Рассекающий удар
+Иконка способности: https://proginvert.github.io/3d_resources/DKEjam2025/ability_blood.jpg
+Звук способности: https://proginvert.github.io/3d_resources/DKEjam2025/ability_blood1.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/ability_blood2.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/ability_blood3.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/ability_blood4.mp3,
+Время восстановления: 0
+Стоимость ресурса: 0
+Что происходит при активации способности: выбранный противник получает 10 единиц урона и на него накладывается дебаф "Кровотечение"
+Описание способности: Наносит 10 урона, и накладывает Кровотечение
+
+5 Способность
+Имя способности: Звон стали
+Иконка способности: https://proginvert.github.io/3d_resources/DKEjam2025/ability_strike.jpg
+Звук способности: https://proginvert.github.io/3d_resources/DKEjam2025/ability_strike.mp3
+Время восстановления: 4
+Стоимость ресурса: 0
+Что происходит при активации способности: выбранный противник получает 55 единиц урона.
+Описание способности: Мощный удар катаной. Восстановление 4 хода.
+
+6 Способность
+Имя способности: За императора!
+Иконка способности: https://proginvert.github.io/3d_resources/DKEjam2025/ability_buf.jpg
+Звук способности: https://proginvert.github.io/3d_resources/DKEjam2025/ability_buf.mp3
+Время восстановления: 7
+Стоимость ресурса: 0
+Что происходит при активации способности: Ваша команда получает баф "За императора!"
+Описание способности: Ваша команда получает баф "За императора!"
+
+7 Способность
+Имя способности: Удар хвостом
+Иконка способности:
+Звук способности: https://proginvert.github.io/3d_resources/DKEjam2025/ability_varan.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/ability_varan2.mp3
+Время восстановления: 0
+Стоимость ресурса: 0
+Что происходит при активации способности: выбранный противник получает 2-5 единицы урона
+Описание способности: 
+
+8 Способность
+Имя способности: Удар мечом
+Иконка способности: 
+Звук способности: https://proginvert.github.io/3d_resources/DKEjam2025/ability_sword1.mp3, https://proginvert.github.io/3d_resources/DKEjam2025/ability_sword2.mp3
+Время восстановления: 0
+Стоимость ресурса: 0
+Что происходит при активации способности: выбранный противник получает 6-8 единицы урона
+Описание способности:
+
+1 деБаф
+Имя бафа: Кровотечение
+Иконка бафа: https://proginvert.github.io/3d_resources/DKEjam2025/debuf_blood.jpg
+Время действия: 7
+Что происходит при тике бафа: владелец дебафа теряет каждый ход 3-5 хп
+
+2 Баф
+Имя бафа: За императора!
+Иконка бафа: https://proginvert.github.io/3d_resources/DKEjam2025/ability_buf.jpg
+Время действия: 5
+Что происходит при тике бафа: владелец бафа увеличивает свой урон на 30%
+
+Окно экипировки персонажа
+Фоновая картинка: https://proginvert.github.io/3d_resources/DKEjam2025/gear.jpg
+Картинка расположения ячеек: https://proginvert.github.io/3d_resources/DKEjam2025/gear.jpg
+
+Ячейки экипировки
+Ячейка 1:
+Называние слота экипировки: Голова
+Экипированный предмет: 
+Картинка самой ячейки:
+Ячейка 2:
+Называние слота экипировки: Торс
+Экипированный предмет: Старый нагрудник
+Картинка самой ячейки:
+Ячейка 3:
+Называние слота экипировки: Ноги
+Экипированный предмет: Старые кольчужные поножи
+Картинка самой ячейки:
+Ячейка 4:
+Называние слота экипировки: Обувь
+Экипированный предмет: Старые сапоги
+Картинка самой ячейки:
+Ячейка 5:
+Называние слота экипировки: Правая рука
+Экипированный предмет: Деревянная булава
+Картинка самой ячейки:
+Ячейка 6:
+Называние слота экипировки: Левая рука
+Экипированный предмет: Треснувший баклер
+Картинка самой ячейки:
+Также у персонажа экипирована 1 сумка "Рюкзак Всеслава"
+
+1 Торговец
+Имя торговца: Vendor_1
+Картинка: https://proginvert.github.io/3d_resources/DKEjam2025/vendor_1.png
+Список продаваемых предметов
+Предмет 1:
+Название предмета: Короткий меч
+Стоимость предмета у этого торговца: 8 монет
+Оставшееся количество этого товара у торговца: 1
+Предмет 2:
+Название предмета: Узорчатый щит
+Стоимость предмета у этого торговца: 15 монет
+Оставшееся количество этого товара у торговца: 1
+Предмет 3:
+Название предмета: Тяжёлые кольчужные штаны
+Стоимость предмета у этого торговца: 10 монет
+Оставшееся количество этого товара у торговца: 1
+Предмет 4:
+Название предмета: Старый рыцарский шлем
+Стоимость предмета у этого торговца: 7 монет
+Оставшееся количество этого товара у торговца: 1
+Предмет 5:
+Название предмета: Свиток изучения: Бросок булавы
+Стоимость предмета у этого торговца: 20 монет
+Оставшееся количество этого товара у торговца: 1
+
+Картинка меню: https://proginvert.github.io/3d_resources/DKEjam2025/menu_scr.jpg
+
+{"locationlist":{"loc1":{"name":"loc1","x":1182,"y":1405,"width":160,"height":100,"grab":false,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/loc1.jpg","leftloc":null,"rightloc":"loc2","playerhere":true,"heightfloor":["0.06",0],"scaling":[1,0],"ambient":"https://proginvert.github.io/3d_resources/DKEjam2025/ambient1.mp3","leftborder":"0.13","rightborder":"0.89","lport":"0.18","rport":"0.84","floorsound":"Dryland","usagelist":{"usage0":{"name":"usage0","x":97,"y":248,"width":"48","height":"95","grab":false,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/npc1.png","script":"Запуск диалога log0","colision":[0,"43"],"click":false,"activate":true,"deactivate":true},"usage2":{"name":"usage2","x":338,"y":206,"width":"100","height":"209","grab":false,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/spritesheet1.png","script":"","colision":false,"click":false,"activate":true,"deactivate":false},"usage3":{"name":"usage3","x":46,"y":183,"width":"100","height":50,"grab":false,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/spritesheet.png","script":"","colision":false,"click":false,"activate":true,"deactivate":false},"usage4":{"name":"usage4","x":59,"y":262,"width":"62","height":50,"grab":false,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/invisible_texture.png","script":"Если персонаж носит предмет Узорчатый щит, и короткий меч, то телепортировать его на локацию loc4, добавить на локацию противника \"Шиноби\" а в союзники добавить \"Лириэль\" и инициировать бой, также деактивировать юсейдж trigger_area1 и удалить квест: \"Подготовится к битве\". Если предметы не экипированы, то ничего не делать.","colision":[0,0],"click":false,"activate":true,"deactivate":false},"usage5":{"name":"usage5","x":233,"y":246,"width":"145","height":"85","grab":false,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/shop1.png","script":"Открывает торговое окно \"Vendor_1\"","colision":false,"click":["7","-5","-103","-55"],"activate":true,"deactivate":false}}},"loc2":{"name":"loc2","x":1348,"y":1405,"width":160,"height":100,"grab":false,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/loc2.jpg","leftloc":"loc1","rightloc":"loc3","playerhere":false,"heightfloor":["0.16",0],"scaling":["0.7",0],"ambient":"https://proginvert.github.io/3d_resources/DKEjam2025/ambient1.mp3","leftborder":"0.02","rightborder":"0.98","lport":"0.07","rport":"0.93","floorsound":"Dryland","usagelist":{}},"loc3":{"name":"loc3","x":1514,"y":1405,"width":160,"height":100,"grab":false,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/loc3.jpg","leftloc":"loc2","rightloc":null,"playerhere":false,"heightfloor":["0.39",0],"scaling":[1,0],"ambient":"https://proginvert.github.io/3d_resources/DKEjam2025/ambient1.mp3","leftborder":"0.02","rightborder":"0.52","lport":"0.06","rport":"0.48","floorsound":"Dryland","usagelist":{"usage1":{"name":"usage1","x":204,"y":146,"width":"69","height":"95","grab":false,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/npc2.png","script":"Запуск диалога log3","colision":false,"click":["15",0,"-21",0],"activate":true,"deactivate":true}}},"loc4":{"name":"loc4","x":979,"y":1400,"width":160,"height":100,"grab":false,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/loc4.jpg","leftloc":null,"rightloc":null,"playerhere":false,"heightfloor":["0.04",0],"scaling":[1,0],"ambient":"https://proginvert.github.io/3d_resources/DKEjam2025/ambient2.mp3","leftborder":0.1,"rightborder":0.9,"lport":0.15,"rport":0.85,"floorsound":"Grass","usagelist":{"usage6":{"name":"usage6","x":264,"y":280,"width":"452","height":50,"grab":false,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/invisible_texture.png","script":"Если противник \"Шиноби\" повержен, то телепортировать игрока на локацию \"loc1\", запустить видео \"https://proginvert.github.io/3d_resources/DKEjam2025/video_ending.mp4\" и деактивировать юсейдж trigger_area2. Если \"Шиноби\" не побеждён, то ничего не делать.","colision":[0,0],"click":false,"activate":true,"deactivate":false}}}},"addlocnum":5,"addusagenum":7,"dialoguelist":{"log0":{"name":"log0","x":1373,"y":1307,"width":570,"height":120,"grab":false,"image":{},"imagesrc":"dialogue.png","imagechar":{},"imagecharsrc":"https://proginvert.github.io/3d_resources/DKEjam2025/npcicon1.png","nextdialogue":"log1","var1":null,"var2":null,"var3":null,"var4":null,"text":["Приветствую, искатель! Мне нужна твоя помощь.","Поговори с моим старым другом, эльфом по имени","Лириэль, он неподалёку отсюда, по дороге правее ","моего дома."],"namechar":"Иамакава","script":"","sound":"https://proginvert.github.io/3d_resources/DKEjam2025/log1.1.mp3","font":"Arial","style":"next","side":"left"},"log1":{"name":"log1","x":1374,"y":1459,"width":570,"height":120,"grab":false,"image":{},"imagesrc":"dialogue.png","imagechar":{},"imagecharsrc":"https://proginvert.github.io/3d_resources/DKEjam2025/npcicon1.png","nextdialogue":null,"var1":null,"var2":null,"var3":null,"var4":null,"text":["Он знает кое-что важное о пропавшем артефакте.","Скажи ему, что я отправил тебя. Удачи!","",""],"namechar":"Иамакава","script":"Добавление квеста: \"Пропавший артефакт\"","sound":"https://proginvert.github.io/3d_resources/DKEjam2025/log1.2.mp3","font":"Arial","style":"next","side":"left"},"log3":{"name":"log3","x":1956,"y":1763,"width":570,"height":120,"grab":false,"image":{},"imagesrc":"dialogue.png","imagechar":{},"imagecharsrc":"https://proginvert.github.io/3d_resources/DKEjam2025/playericon.png","nextdialogue":"log4","var1":null,"var2":null,"var3":null,"var4":null,"text":["Здравствуйте, я полагаю вы Лириэль, Меня зовут","Всеслав! Меня прислал Иамакава.","",""],"namechar":"Всеслав","script":"","sound":"https://proginvert.github.io/3d_resources/DKEjam2025/log2.1.mp3","font":"Arial","style":"next","side":"left"},"log4":{"name":"log4","x":1956,"y":1931,"width":570,"height":120,"grab":false,"image":{},"imagesrc":"dialogue.png","imagechar":{},"imagecharsrc":"https://proginvert.github.io/3d_resources/DKEjam2025/npcicon2.png","nextdialogue":"log5","var1":null,"var2":null,"var3":null,"var4":null,"text":["(Вздыхает) Иамакава... Давно я его не видел.","Что ему нужно?","",""],"namechar":"Лириэль","script":"","sound":"https://proginvert.github.io/3d_resources/DKEjam2025/log2.2.mp3","font":"Arial","style":"next","side":"right"},"log5":{"name":"log5","x":1956,"y":2093,"width":570,"height":120,"grab":false,"image":{},"imagesrc":"dialogue.png","imagechar":{},"imagecharsrc":"https://proginvert.github.io/3d_resources/DKEjam2025/playericon.png","nextdialogue":null,"var1":"log6","var2":"log7","var3":null,"var4":null,"text":["Иамакава обеспокоен ситуацией с артефактом.","Он сказал, ты знаешь о том, куда пропал артефакт.","",""],"namechar":"Всеслав","script":"","sound":"","font":"Arial","style":"choice","side":"left"},"log6":{"name":"log6","x":1643,"y":2246,"width":570,"height":120,"grab":false,"image":{},"imagesrc":"dialogue.png","imagechar":{},"imagecharsrc":"https://proginvert.github.io/3d_resources/DKEjam2025/playericon.png","nextdialogue":"log8","var1":null,"var2":null,"var3":null,"var4":null,"text":["Иамакава обеспокоен ситуацией с пропавшим","артефактом. Он надеется, что ты сможешь","пролить свет на некоторые вещи.",""],"namechar":"Всеслав","script":"","sound":"https://proginvert.github.io/3d_resources/DKEjam2025/log2.3.1.mp3","font":"Arial","style":"next","side":"left"},"log7":{"name":"log7","x":2255,"y":2248,"width":570,"height":120,"grab":false,"image":{},"imagesrc":"dialogue.png","imagechar":{},"imagecharsrc":"https://proginvert.github.io/3d_resources/DKEjam2025/playericon.png","nextdialogue":"log8","var1":null,"var2":null,"var3":null,"var4":null,"text":["Он сказал, что ты знаешь о том, куда пропал","артефакт. Можешь ли ты рассказать мне об этом?","",""],"namechar":"Всеслав","script":"","sound":"https://proginvert.github.io/3d_resources/DKEjam2025/log2.3.2.mp3","font":"Arial","style":"next","side":"left"},"log8":{"name":"log8","x":1951,"y":2456,"width":570,"height":120,"grab":false,"image":{},"imagesrc":"dialogue.png","imagechar":{},"imagecharsrc":"https://proginvert.github.io/3d_resources/DKEjam2025/npcicon2.png","nextdialogue":"log9","var1":null,"var2":null,"var3":null,"var4":null,"text":["Сегодня ночью в храм проникли несколько шиноби,","они не смогли найти артефакт, поскольку ножка","пьедестала была сломана, сам артефакт был в","соседнем хранилище."],"namechar":"Лириэль","script":"","sound":"https://proginvert.github.io/3d_resources/DKEjam2025/log2.4.mp3","font":"Arial","style":"next","side":"right"},"log9":{"name":"log9","x":1951,"y":2620,"width":570,"height":120,"grab":false,"image":{},"imagesrc":"dialogue.png","imagechar":{},"imagecharsrc":"https://proginvert.github.io/3d_resources/DKEjam2025/npcicon2.png","nextdialogue":null,"var1":null,"var2":null,"var3":null,"var4":null,"text":["Сейчас артефакт в безопасности, но шиноби снова","попытаются его выкрасть, нам нужно дать им отпор,","пока они не успели найти артефакт. Пока готовься","к битве, вечером встречаемся около храма."],"namechar":"Лириэль","script":"Удаление квеста: \"Пропавший артефакт\", Добавление опыта игроку: 50xp, Добавление квеста: \"Подготовится к битве\"","sound":"https://proginvert.github.io/3d_resources/DKEjam2025/log2.5.mp3","font":"Arial","style":"next","side":"right"}},"charlist":{"fighter1":{"name":"fighter1","type":"player","x":-500,"y":-500,"width":150,"height":200,"grab":true,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/player.png","sprite":false,"idle":[0.2,0],"move":[1,0],"dead":[1,0],"abilitys":[],"sprite_anim":{"maxx":1,"maxy":1,"idle":[1,1,0.1,0],"move":[1,1,0.1,0],"dead":[1,1,0.1,0],"ability":[]},"charsize":7,"selectability":0,"portrait":{},"portraitsrc":"https://proginvert.github.io/3d_resources/DKEjam2025/playericon.png","idle0":"normal","move0":"normal","dead0":"normal","stepssound":[]},"fighter2":{"name":"fighter2","type":"enemy","x":-500,"y":-500,"width":150,"height":200,"grab":true,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/enemy1.png","sprite":false,"idle":[0.2,0],"move":[1,0],"dead":[1,0],"abilitys":[],"sprite_anim":{"maxx":1,"maxy":1,"idle":[1,1,0.1,0],"move":[1,1,0.1,0],"dead":[1,1,0.1,0],"ability":[]},"charsize":0,"selectability":0,"portrait":{},"portraitsrc":"https://proginvert.github.io/3d_resources/DKEjam2025/enemy1icon.png","idle0":"normal","move0":"normal","dead0":"normal","stepssound":[]},"fighter3":{"name":"fighter3","type":"enemy","x":-500,"y":-500,"width":150,"height":200,"grab":true,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/enemy2.png","sprite":false,"idle":[0.2,0],"move":[1,0],"dead":[1,0],"abilitys":[],"sprite_anim":{"maxx":1,"maxy":1,"idle":[1,1,0.1,0],"move":[1,1,0.1,0],"dead":[1,1,0.1,0],"ability":[]},"charsize":12,"selectability":0,"portrait":{},"portraitsrc":"portrait.png","idle0":"normal","move0":"normal","dead0":"normal","stepssound":[]},"fighter4":{"name":"fighter4","type":"none","x":-500,"y":-500,"width":150,"height":200,"grab":true,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/ally_lyryel.png","sprite":false,"idle":[0.2,0],"move":[1,0],"dead":[1,0],"abilitys":[],"sprite_anim":{"maxx":1,"maxy":1,"idle":[1,1,0.1,0],"move":[1,1,0.1,0],"dead":[1,1,0.1,0],"ability":[]},"charsize":8,"selectability":0,"portrait":{},"portraitsrc":"https://proginvert.github.io/3d_resources/DKEjam2025/npcicon2.png","idle0":"normal","move0":"normal","dead0":"normal","stepssound":[]},"fighter5":{"name":"fighter5","type":"enemy","x":-500,"y":-500,"width":150,"height":200,"grab":true,"image":{},"imagesrc":"https://proginvert.github.io/3d_resources/DKEjam2025/enemy_shinobi.png","sprite":false,"idle":[0.2,0],"move":[1,0],"dead":[1,0],"abilitys":[],"sprite_anim":{"maxx":1,"maxy":1,"idle":[1,1,0.1,0],"move":[1,1,0.1,0],"dead":[1,1,0.1,0],"ability":[]},"charsize":0,"selectability":0,"portrait":{},"portraitsrc":"https://proginvert.github.io/3d_resources/DKEjam2025/enemy_shinobiicon.png","idle0":"normal","move0":"normal","dead0":"normal","stepssound":[]}},"addlognum":10,"addcharnum":6}
